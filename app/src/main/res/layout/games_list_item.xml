@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/list_item"
+        android:layout_below="@id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/team_1"
+            android:layout_toLeftOf="@+id/mid_layout"
+            android:text="@string/fc_nurnberg"
+            android:textColor="@android:color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginLeft="@dimen/dp_5"/>
+
+        <LinearLayout
+            android:id="@+id/mid_layout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/team1_logo"
+                android:layout_weight="0.35"
+                android:background="@drawable/fc_nuernberg"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_25"
+                android:layout_margin="@dimen/dp_10"/>
+
+            <TextView
+                android:id="@+id/score1"
+                android:layout_weight="0.25"
+                android:text="@string/one"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dp_5"/>
+
+            <TextView
+                android:id="@+id/colon"
+                android:text="@string/colon"
+                android:layout_weight="0.25"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dp_5"/>
+
+            <TextView
+                android:id="@+id/score2"
+                android:layout_weight="0.25"
+                android:text="@string/one"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dp_5"/>
+
+            <ImageView
+                android:id="@+id/team2_logo"
+                android:layout_weight="0.35"
+                android:background="@drawable/bayern_muenchen"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_25"
+                android:layout_margin="@dimen/dp_10"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/team_2"
+            android:layout_toRightOf="@id/mid_layout"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/bayern_munchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

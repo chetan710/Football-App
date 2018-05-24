@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mobile_computing.project.football.GameResultsActivity"
+    android:background="@drawable/fifa">
+
+    <include
+        layout="@layout/my_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:background="@color/myGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/league_name"
+                android:text="@string/spieltag"
+                android:textSize="@dimen/sp_18"
+                android:layout_margin="@dimen/dp_5"
+                android:textColor="@android:color/white"
+                android:layout_gravity="left|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/games_list"
+            android:layout_below="@id/top_layout"
+            android:dividerHeight="@dimen/dp_1"
+            android:divider="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>
